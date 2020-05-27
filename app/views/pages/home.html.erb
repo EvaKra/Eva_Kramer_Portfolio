@@ -1,2 +1,20 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<div class="container">
+    <div class="about-me-box row">
+        <div class="left-side col-12 col-lg-4">
+            <%= image_tag("Eva_Kramer3.jpg") %>
+        </div>
+        
+        <div class="right-side col-12 col-lg-7">
+            <div class="description-box">
+                <h1>EVA KRAMER</h1>
+                <p>Hallo! I'm Eva, a full stack developer based in London, UK. I'm currently looking for a new role and collaboration project. 
+                Check out <%= link_to "my projects", projects_path%> and get in touch.</p>
+            </div>
+            <div class="social-media">
+            <i class="fab fa-linkedin"></i>
+            <i class="fab fa-github"></i>
+            <i class="far fa-envelope"></i>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,1 +1,25 @@
 // Specific CSS for your home-page
+body {
+    background-color: white;
+}
+.about-me-box {
+    display: flex;
+    margin-top: 40px;
+    justify-content: space-evenly;
+}
+
+.left-side img {
+    width: 300px;
+   
+}
+
+.right-side {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.social-media {
+    font-size: 30px;
+}
+
+
