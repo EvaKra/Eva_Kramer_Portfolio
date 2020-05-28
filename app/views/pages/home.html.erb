@@ -1,4 +1,5 @@
-<div class="container">
+<div class="container-home">
+<%= render "shared/navbar"%>
     <div class="about-me-box row">
         <div class="left-side col-12 col-lg-4">
             <%= image_tag("Eva_Kramer3.jpg") %>
@@ -7,12 +8,16 @@
         <div class="right-side col-12 col-lg-7">
             <div class="description-box">
                 <h1>Hallo!</h1>
-                <p>I'm Eva, a full stack developer based in London, UK. I'm currently looking for new opportunities and projects.
+                <p class="description">I'm Eva, a full stack developer based in London, UK. I'm currently looking for new opportunities and I'm excited to collaborate on new projects. 
+                <br>
+                <br>
+                At the beginning of 2020 I transitioned from Account Management to Web Development.
+                <br>
                 Check out <%= link_to "my projects", projects_path%> and get in touch.</p>
             </div>
             <div class="social-media">
-                <%= link_to "<i class='fab fa-linkedin'></i>".html_safe, "https://linkedin.com/in/eva-kramer"%>
-                <%= link_to "<i class='fab fa-github'></i>".html_safe, "https://github.com/EvaKra"%>
+                <%= link_to "<i class='fab fa-linkedin'></i>".html_safe, "https://linkedin.com/in/eva-kramer", target: :_blank%>
+                <%= link_to "<i class='fab fa-github'></i>".html_safe, "https://github.com/EvaKra", target: :_blank%>
                 <i class="far fa-envelope"></i>
             </div>
         </div>
