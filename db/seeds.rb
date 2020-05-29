@@ -13,7 +13,7 @@ travelizer.photos.attach(io: File.open('app/assets/images/Travelizer_grouped.png
 puts "travelizer done"
 
 recyclable = Project.create(name: "Recyclable", description:"Recycling household waste can be confusing. This app helps users make quick and effective decisions and also includes a quiz for users to up their recycling game.", url: "http://www.recyclable.rocks/", github: "https://github.com/EvaKra/recyclable")
-recyclable.photos.attach(io: File.open('app/assets/images/Recyclable3.png'), filename: 'Recyclable.png', content_type: 'image/png')
+recyclable.photos.attach(io: File.open('app/assets/images/Recyclable3.png'), filename: 'Recyclable3.png', content_type: 'image/png')
 recyclable.save!
 puts "recyclable done"
 
