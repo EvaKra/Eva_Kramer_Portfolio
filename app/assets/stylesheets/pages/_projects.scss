@@ -1,40 +1,37 @@
 .mockups {
-    width: 140px;
     display: flex;
     justify-content: center;
-}
-
-
-.images img {
-    width: 140px;
+   // min-width: 50%;
+   margin-bottom: 20px;
 }
 
 .image img {
-    width: 100%;
-}
-
-.mockups {
-    min-width: 50%;
+    width: 90%;
 }
 
 .project-card {
-    display:flex;
-    margin-bottom: 80px;
+    display: flex;
+    margin-bottom: 50px;
+    border-bottom: 0.25px lightgrey solid;
+    padding-bottom: 50px;
 }
 
 .projects-all {
-    margin-top: 50px;
-
+    margin-top: 130px;
 }
 
 .urls {
     display: flex;
-    padding-bottom: 20px;
 }
 
 .urls i {
-    font-size: 30px;
+    font-size: 25px;
     color: black;
+    margin-right: 5px;
+}
+
+.urls a:hover {
+    text-decoration: none;
 }
 
 .github {
@@ -43,6 +40,9 @@
 .project-text {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    margin-top: 25px;
+}
+
+.description {
+    padding-bottom: 15px;
+    margin-top: 10px;
 }

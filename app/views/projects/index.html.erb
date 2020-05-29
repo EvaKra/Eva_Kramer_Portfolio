@@ -1,36 +1,30 @@
+
 <div class="container-home">
     <%= render "shared/navbar"%>
     <div class="projects-all">
         <% @projects.each do |project|%>
         <div class="project-card row">
-            <div class="mockups col-12 col-lg-6">
+            <div class="mockups col-12 col-lg-5">
                 <% project.photos.each do |photo| %>
-                    <% if project.photos.length > 1%>
-                        <div class="images">
-                            <%= image_tag photo %>
-                        </div> 
-                    <% else %>
                         <div class="image">
                            <%= image_tag photo %> 
-                        </div>
-                    <% end %>        
+                        </div>    
                 <%end%>
             </div>
             
-            <div class="project-text col-12 col-lg-6">
+            <div class="project-text col-12 col-lg-7">
                 <div class="description">
                     <h1><%= project.name%></h1>
                     <%= project.description%>
                 </div>
                 <div class="urls">
                     <div class="github">
-                        <%= link_to "<i class='fab fa-github'></i>".html_safe, project.github, target: :_blank%> View Github
+                        <i class='fab fa-github'></i> <%= link_to "View Github", project.github, target: :_blank%>
                     </div>
                     <br>
                     <div>
-                        <%= link_to "<i class='fab fa-github'></i>".html_safe, project.url, target: :_blank%> View Website
+                       <i class="fas fa-laptop"></i> <%= link_to "View Website", project.url, target: :_blank%>
                     </div>
-                    
                 </div>
             </div>
         </div>    
