@@ -10,7 +10,7 @@
 }
 
 .image img {
-    width:400px;
+    width: 100%;
 }
 
 .mockups {
@@ -19,10 +19,29 @@
 
 .project-card {
     display:flex;
-    margin-top: 40px;
+    margin-bottom: 80px;
 }
 
 .projects-all {
     margin-top: 50px;
 
+}
+
+.urls {
+    display: flex;
+    
+}
+
+.urls i {
+    font-size: 30px;
+    color: black;
+}
+
+.github {
+    margin-right: 25px;
+}
+.project-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }

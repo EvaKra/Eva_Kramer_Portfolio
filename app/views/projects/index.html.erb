@@ -23,10 +23,13 @@
                     <%= project.description%>
                 </div>
                 <div class="urls">
-                    <%= link_to "<i class='fab fa-github'></i>".html_safe, project.github, target: :_blank%> View source
+                    <div class="github">
+                        <%= link_to "<i class='fab fa-github'></i>".html_safe, project.github, target: :_blank%> View source
+                    </div>
                     <br>
-                    <%= link_to "<i class='fab fa-github'></i>".html_safe, project.url, target: :_blank%>
-                   
+                    <div>
+                        <%= link_to "<i class='fab fa-github'></i>".html_safe, project.url, target: :_blank%> View website
+                    </div>
                     
                 </div>
             </div>
