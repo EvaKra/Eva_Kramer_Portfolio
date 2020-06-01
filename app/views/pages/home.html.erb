@@ -4,22 +4,28 @@
         <div class="left-side col-12 col-lg-4">
             <%= image_tag("Eva_Kramer3.jpg") %>
         </div>
-        
         <div class="right-side col-12 col-lg-7">
             <div class="description-box">
                 <h1>Hallo!</h1>
-                <p class="description">I'm Eva, a full stack developer based in London, UK. I'm currently looking for new opportunities and I'm excited to collaborate on new projects. 
+                <br>
+                <p class="description">I'm Eva, a full stack developer based in London. At the beginning of 2020 I transitioned from Account Management to Web Development. 
                 <br>
                 <br>
-                At the beginning of 2020 I transitioned from Account Management to Web Development.
+                I'm currently looking for new opportunities and I'm excited to collaborate on new projects. 
                 <br>
-                Check out <%= link_to "my projects", projects_path%> and get in touch.</p>
+                <p>Feel free to check out <%= link_to "my projects", projects_path%> and connect with me via any of the following:</p>
             </div>
             <div class="social-media">
                 <%= link_to "<i class='fab fa-linkedin'></i>".html_safe, "https://linkedin.com/in/eva-kramer", target: :_blank%>
                 <%= link_to "<i class='fab fa-github'></i>".html_safe, "https://github.com/EvaKra", target: :_blank%>
                 <i class="far fa-envelope"></i>
+                <%= link_to download_pdf_path, target: "_blank", :action => 'go' do %>
+                    <i class="fas fa-file-pdf"></i>
+                <% end %>
             </div>
         </div>
     </div>
 </div>
+
+<%#= link_to "download", download_pdf_path %>
+

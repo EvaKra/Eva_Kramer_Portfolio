@@ -1,33 +1,31 @@
-
 <div class="container-home">
     <%= render "shared/navbar"%>
     <div class="projects-all">
         <% @projects.each do |project|%>
-        <div class="project-card row">
-            <div class="mockups col-12 col-lg-5">
-                <% project.photos.each do |photo| %>
+            <div class="project-card row">
+                <div class="mockups col-12 col-lg-5">
+                    <% project.photos.each do |photo| %>
                         <div class="image">
-                           <%= cl_image_tag photo.key %> 
+                            <%= cl_image_tag photo.key %> 
                         </div>    
-                <%end%>
-            </div>
-            
-            <div class="project-text col-12 col-lg-7">
-                <div class="description-project">
-                    <h1><%= project.name%></h1>
-                    <%= project.description%>
+                    <%end%>
                 </div>
-                <div class="urls">
-                    <div class="github">
-                        <i class='fab fa-github'></i> <%= link_to "View Github", project.github, target: :_blank%>
+                <div class="project-text col-12 col-lg-7">
+                    <div class="description-project">
+                        <h1><%= project.name%></h1>
+                        <%= project.description%>
                     </div>
-                    <br>
-                    <div>
-                       <i class="fas fa-laptop"></i> <%= link_to "View Website", project.url, target: :_blank%>
+                    <div class="urls">
+                        <div class="github">
+                            <i class='fab fa-github'></i> <%= link_to "View Github", project.github, target: :_blank%>
+                        </div>
+                        <br>
+                        <div>
+                            <i class="fas fa-laptop"></i> <%= link_to "View Website", project.url, target: :_blank%>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </div>    
+            </div>    
         <% end %> 
     </div>
 </div>
