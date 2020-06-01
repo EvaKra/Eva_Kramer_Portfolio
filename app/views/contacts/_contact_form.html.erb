@@ -1,18 +1,24 @@
-<%= form_for @contact, remote: true do |f| %>
-    <div class="col-md-6">
-        <%= f.label :name %></br>
-        <%= f.text_field  :name, required: true, class: "contact-form-text-area" %></br>
+<div class="container-home">
+    <%= render "shared/navbar"%>
+  
+        <div class="contact-form row" >
+            <div class="col-10 col-lg-6">
+                <h1>Get in touch</h1>
+                    <%= form_for @contact, remote: true do |f| %>
+                        <%= f.label :name %></br>
+                        <%= f.text_field  :name, required: true, class: "contact-form-text-area" %></br>
 
-        <%= f.label :email %></br>
-        <%= f.text_field :email, required: true, class: "contact-form-text-area" %></br>
+                        <%= f.label :email %></br>
+                        <%= f.text_field :email, required: true, class: "contact-form-text-area" %></br>
 
-      <%= f.label :message %></br>
-      <%= f.text_area :message, rows: 8, cols: 40, required: true, class: "contact-form-text-area",
-                        placeholder: "Send me a message"%></br>
+                        <%= f.label :message %></br>
+                        <%= f.text_area :message, rows: 8, cols: 40, required: true, class: "contact-form-text-area", placeholder: "Send me a message"%></br>
 
-      <%= f.submit 'Send Message', class: 'btn btn-primary' %>
-    </div>
-  <% end %>
-  <div class="col-md-6" id="flash-message">
-    <%= render 'flash' %>
-  </div>
+                        <%= f.submit 'Send', class: 'btn btn-primary' %>
+            </div>
+                    <% end %>
+                    <div class="col-10 col-lg-6" id="flash-message">
+                        <%= render 'flash' %>
+                    </div>
+        </div>
+</div>  
