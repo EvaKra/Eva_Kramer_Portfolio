@@ -16,17 +16,17 @@ h1 {
 .about-me-box {
     display: flex;
     margin-top: 90px;
-    justify-content: space-evenly;
+    // justify-content: space-evenly;
 }
 
 .left-side img {
-    width: 300px;
-    
+    width: 300px;   
 }
 
 .left-side {
     margin-top: 30px;
-    min-width: 41%;
+    min-width: 35%;
+    margin-right: 15px;
 }
 
 .right-side {
