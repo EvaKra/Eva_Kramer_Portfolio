@@ -8,17 +8,15 @@
             <div class="description-box">
                 <h1>Hallo!</h1>
                 <br>
-                <p class="description">I'm Eva, a full stack developer based in London. At the beginning of 2020 I transitioned from Account Management to Web Development. 
+                <p class="description">I'm Eva, a full stack developer based in London. My passion for problem solving and creative solutions inspired me to change my career path and transition from Account Management to Web Development.  
                 <br>
                 <br>
-                I'm currently looking for new opportunities and I'm excited to collaborate on new projects. 
-                <br>
-                <p>Feel free to check out <%= link_to "my projects", projects_path%> and connect with me via any of the following:</p>
+                I'm currently looking for new opportunities and to collaborate on new projects.
+                Feel free to check out my work, contact me or connect with me via the following:
             </div>
             <div class="social-media">
                 <%= link_to "<i class='fab fa-linkedin'></i>".html_safe, "https://linkedin.com/in/eva-kramer", target: :_blank%>
                 <%= link_to "<i class='fab fa-github'></i>".html_safe, "https://github.com/EvaKra", target: :_blank%>
-                <i class="far fa-envelope"></i>
                 <%= link_to download_pdf_path, target: "_blank", :action => 'go' do %>
                     <i class="fas fa-file-pdf"></i>
                 <% end %>

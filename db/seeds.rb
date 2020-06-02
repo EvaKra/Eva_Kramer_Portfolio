@@ -13,7 +13,7 @@ travelizer.photos.attach(io: File.open('app/assets/images/Travelizer_grouped.png
 travelizer.save!
 puts "travelizer done"
 
-recyclable = Project.new(name: "Recyclable", description:"Recycling household waste can be confusing. Recyclable helps users make quick and effective decisions as to whether a piece of packaging can be recycled. It also includes a recycling quiz for those who want to improve their recycling knowledge.", url: "http://www.recyclable.rocks/", github: "https://github.com/EvaKra/recyclable")
+recyclable = Project.new(name: "Recyclable", description:"Recycling household waste can be confusing. Recyclable helps users make quick and effective decisions as to whether a piece of packaging can be recycled. It also includes a recycling quiz for those who want to improve their recycling knowledge.", url: "http://www.recyclable.rocks/", github: "https://github.com/EvaKra/recyclable", demo: "https://www.youtube.com/watch?v=L9Pvj2iJ6po&feature=youtu.be&t=5380")
 recyclable.photos.attach(io: File.open('app/assets/images/Recyclable3.png'), filename: 'project.png', content_type: 'image/png')
 recyclable.save!
 puts "recyclable done"

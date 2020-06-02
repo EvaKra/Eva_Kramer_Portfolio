@@ -20,9 +20,14 @@
                             <i class='fab fa-github'></i> <%= link_to "View Github", project.github, target: :_blank%>
                         </div>
                         <br>
-                        <div>
+                        <div class="github">
                             <i class="fas fa-laptop"></i> <%= link_to "View Website", project.url, target: :_blank%>
                         </div>
+                        <% if project.demo?%>
+                        <div>
+                            <i class="fab fa-youtube" style="color:red;"></i> <%= link_to "View Demo", project.demo, target: :_blank%>
+                        </div>
+                        <%end%>
                     </div>
                 </div>
             </div>    
