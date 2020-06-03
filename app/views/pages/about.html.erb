@@ -1,0 +1,65 @@
+<div class="container-home">
+<%= render "shared/navbar"%>
+        <div class="about-me-box-am am-full row">
+            <div class="left-side-am col-12 col-lg-5">
+                <%= image_tag("Eva_Kramer3.jpg") %>
+            </div>
+            <div class="right-side-am col-12 col-lg-7">
+                <h1><span>AB</span>OUT ME</h1>
+                <p class="me-description">
+                    I’m naturally inquisitive and enjoy figuring out how things work - from code to reassembling a bike or the process in a recycling facility.
+                    Before moving into web development, I worked in various commercial roles. My passion for problem solving and creative solutions inspired me to change my career path and transition from Account Management to Web Development.
+                    <br>
+                    <br>
+                    I've successfully completed the full stack web development bootcamp at Le Wagon. Self-motivated, adaptable to different new scenarios and with a strong eye for detail I am now able to deliver usercentric solutions effectively.
+                    <br>
+                    <br>
+                    When I'm not coding, I enjoy spending time doing outdoors activities like cycling, running, hiking...
+                    <br>
+                    <br>
+                </p>    
+                    <i class="fas fa-file-pdf" style="font-size: 30px;"></i>
+                <%= link_to download_pdf_path, target: "_blank", :action => 'go' do %>
+                   Download my CV
+                <% end %>
+            </div>  
+        </div>
+        <div class="CV row">
+            <div class="CV-left col-12 col-lg-7">
+                <h2 class="section-heading"><span>EDU</span>CATION</h2>
+                    <h3>Le Wagon - Full Stack Web Development Bootcamp</h3> 
+                        <p class="italic">London  01/2020 - 03/2020</p>
+                        <p>Full-stack web development bootcamp covering a Rails MVC framework comprising Ruby, Rails, JavaScript ES6, SQL/PostgreSQL, HTML5 and SCSS/CSS as well as product management.</p>
+                <br>
+                    <h3>University of Applied Sciences Worms, Germany</h3> 
+                        <p class="italic">B.A. Tourism and Travel Management 2:1, 10/2012 – 07/2015</p>
+                        <p>Dissertation topic: Economic aspects of the tertiary sector in Germany</p>
+                <h2 class="section-heading"><span>EMP</span>LOYMENT HISTORY</h2>
+                    <h3>Associate Vice President, Account Management</h3> 
+                        <p class="italic">Third Bridge, London 02/2019 - 11/2019</p>
+                    <h3>Senior Associate, Account Management</h3> 
+                        <p class="italic">Third Bridge, London 10/2017 - 01/2019</p>
+                    <h3>E-commerce - Sales & Operations Executive</h3>
+                        <p class="italic">VisitBritain, London 10/2015 - 09/2017</p>
+            </div>
+
+
+            <div class="CV-right col-12 col-lg-4">
+                <h2 class="section-heading"><span>TEC</span>HNICAL SKILLS</h2>
+                    <ul>
+                        <li>Ruby Ruby on Rails</li>
+                        <li>APIs, JSON, scraping </li>
+                        <li>Relational databases, SQL, PostgreSQL </li>
+                        <li>HTML, CSS, Bootstrap </li>
+                        <li>ES6 Javascript </li>
+                        <li>OOP concepts </li>
+                        <li>MVC structures </li>
+                        <li>TDD workflow</li>
+                        <li>Wireframes, prototyping, UI design </li>
+                        <li>Git, Github, technical workflow</li>
+                    </ul>
+            </div>
+        </div>    
+    
+</div>
+    

@@ -10,7 +10,13 @@
 }
 
 .contact-form {
-  margin-top: 130px;
+  margin: 130px 5px 0px 5px;
+  display: flex;
+  justify-content: center;
+}
+
+.form-box {
+  padding:0px;
 }
 
 .contact-form-text-area {
