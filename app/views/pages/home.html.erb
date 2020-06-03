@@ -1,7 +1,7 @@
 <div class="container-home">
 <%= render "shared/navbar"%>
     <div class="about-me-box row">
-        <div class="left-side col-12 col-lg-4">
+        <div class="left-side col-12 col-lg-5">
             <%= image_tag("Eva_Kramer3.jpg") %>
         </div>
         <div class="right-side col-12 col-lg-7">
@@ -11,12 +11,13 @@
                 <p class="description">I'm Eva, a full stack developer based in London. I enjoy making engaging and functional web applications that have a clean design.  
                 <br>
                 <br>
-                I'm currently looking for new opportunities and to collaborate on new projects.
+                I'm currently looking for new opportunities and projects to collaborate on.
                 Feel free to check out my work, contact me or connect with me via the following:
             </div>
             <div class="social-media">
                 <%= link_to "<i class='fab fa-linkedin'></i>".html_safe, "https://linkedin.com/in/eva-kramer", target: :_blank%>
                 <%= link_to "<i class='fab fa-github'></i>".html_safe, "https://github.com/EvaKra", target: :_blank%>
+                <%= link_to "<i class='far fa-envelope'></i>".html_safe, contact_path %>
                 <%= link_to download_pdf_path, target: "_blank", :action => 'go' do %>
                     <i class="fas fa-file-pdf"></i>
                 <% end %>
@@ -24,6 +25,4 @@
         </div>
     </div>
 </div>
-
-<%#= link_to "download", download_pdf_path %>
 

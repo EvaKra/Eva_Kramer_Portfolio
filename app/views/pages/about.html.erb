@@ -6,7 +6,8 @@
             </div>
             <div class="right-side-am col-12 col-lg-7">
                 <h1><span>AB</span>OUT ME</h1>
-                <p class="me-description">
+                <br>
+                <p>
                     I’m naturally inquisitive and enjoy figuring out how things work - from code to reassembling a bike or the process in a recycling facility.
                     Before moving into web development, I worked in various commercial roles. My passion for problem solving and creative solutions inspired me to change my career path and transition from Account Management to Web Development.
                     <br>
@@ -14,17 +15,23 @@
                     I've successfully completed the full stack web development bootcamp at Le Wagon. Self-motivated, adaptable to different new scenarios and with a strong eye for detail I am now able to deliver usercentric solutions effectively.
                     <br>
                     <br>
-                    When I'm not coding, I enjoy spending time doing outdoors activities like cycling, running, hiking...
+                    When I'm not coding, I often enjoy outdoor activities like cycling, running and discovering new spots in the city.
                     <br>
                     <br>
-                </p>    
-                    <i class="fas fa-file-pdf" style="font-size: 30px;"></i>
-                <%= link_to download_pdf_path, target: "_blank", :action => 'go' do %>
-                   Download my CV
-                <% end %>
+                </p>  
+                <div class="urls">  
+                    <div class="github">
+                        <i class="fas fa-file-pdf" style="font-size: 30px;"></i>
+                        <%= link_to download_pdf_path, target: "_blank", :action => 'go' do %>
+                        Download my CV
+                        <% end %>
+                    </div>
+                </div>
             </div>  
         </div>
-        <div class="CV row">
+        <%
+=begin%>
+ <div class="CV row">
             <div class="CV-left col-12 col-lg-7">
                 <h2 class="section-heading"><span>EDU</span>CATION</h2>
                     <h3>Le Wagon - Full Stack Web Development Bootcamp</h3> 
@@ -34,7 +41,7 @@
                     <h3>University of Applied Sciences Worms, Germany</h3> 
                         <p class="italic">B.A. Tourism and Travel Management 2:1, 10/2012 – 07/2015</p>
                         <p>Dissertation topic: Economic aspects of the tertiary sector in Germany</p>
-                <h2 class="section-heading"><span>EMP</span>LOYMENT HISTORY</h2>
+                <h2 class="section-heading"><span>EMP</span>LOYMENT</h2>
                     <h3>Associate Vice President, Account Management</h3> 
                         <p class="italic">Third Bridge, London 02/2019 - 11/2019</p>
                     <h3>Senior Associate, Account Management</h3> 
@@ -59,7 +66,9 @@
                         <li>Git, Github, technical workflow</li>
                     </ul>
             </div>
-        </div>    
+        </div>     
+<%
+=end%>
     
 </div>
     
