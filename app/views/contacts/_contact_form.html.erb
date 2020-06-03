@@ -4,8 +4,8 @@
         <div class="contact-form row" >
             <div class="form-box col-11 col-lg-6">
                 <h1><span>GET</span> IN TOUCH</h1>
-               <p>You can send me a message via the form below.</p>
-               <br>
+               <p style="margin-top: 21px;">You can send me a message via the form below.</p>
+               
                     <%= form_for @contact, remote: true do |f| %>
                         <%= f.label :name %>
                         <%= f.text_field  :name, required: true, class: "contact-form-text-area" %>
