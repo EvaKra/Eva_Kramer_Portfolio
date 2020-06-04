@@ -1,5 +1,5 @@
 meta_product_name: "Eva Kramer - Portfolio"
 meta_title: "Eva Kramer - Portfolio"
 meta_description: "I'm a full stack developer based in London. I enjoy making engaging and functional web applications that have a clean design."
-meta_image: "Eva_Kramer3.jpg" # should exist in `app/assets/images/`
+meta_image: "Eva_meta_image.jpg" # should exist in `app/assets/images/`
 twitter_account: "@product_twitter_account"   # required for Twitter Cards
